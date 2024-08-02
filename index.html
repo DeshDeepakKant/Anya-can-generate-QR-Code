@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Anya can generate QR Code </h1>
+        <h3>QR code generator using qrcode.js</h3>
+        <h3>Enter QR code content and generate QR</h3>
+    </header>
+    <main>
+        <form action="/" id="qr-generation-form">
+            <input type="text" name="qr-code-content" id="qr-content" value="" placeholder="Enter QR content" autocomplete="off" />
+            <input type="submit" value="Generate QR Code" />
+        </form><br />
+        <div id="qr-code"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
